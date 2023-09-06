@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+<title>Terve</title>
+</head>
+
+<body>
+<button id=terve onClick = "minaOlen()">Klikkaa tästä</button>
+<h6>Tällä sivulla on ääniä</h6>
+
+<p><img src="anssi.png" id="image"></p>
+</body>
+<script>
+var audio = new Audio('anssi.mp3');
+
+function minaOlen() {
+    document.getElementById('image')
+        .style.display = "block";
+    audio.play();
+    console.log("Terve, minä olen Anssi Nieminen")
+}
+
+
+
+
+</script>
+
+</html>
