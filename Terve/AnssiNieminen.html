@@ -6,13 +6,16 @@
 </head>
 
 <body>
-<button id=terve onClick = "minaOlen()">Klikkaa tästä</button>
+<button id='terve'>Klikkaa tästä</button>
 <h6>Tällä sivulla on ääniä</h6>
 
-<p><img src="anssi.png" id="image"></p>
+<p><img src="anssi.png" id=image></p>
 </body>
 <script>
+let nappi = document.getElementById('terve')[0];
 var audio = new Audio('anssi.mp3');
+
+nappi.addEventListener("click", minaOlen());
 
 function minaOlen() {
     document.getElementById('image')
@@ -20,8 +23,8 @@ function minaOlen() {
     audio.play();
     console.log('Terve, minä olen Anssi Nieminen');
     console.log('Tietenkin hyvää suomalaista leipää');
-}
 
+}
 
 
 
